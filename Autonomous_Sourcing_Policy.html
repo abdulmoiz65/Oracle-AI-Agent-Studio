@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Autonomous Sourcing Policy</title>
+<style>
+  body { font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #111; margin: 40px; line-height: 1.5; }
+  h1 { font-size: 20px; border-bottom: 2px solid #0b3d2e; padding-bottom: 6px; }
+  h2 { font-size: 15px; margin-top: 28px; border-bottom: 1px solid #ccc; padding-bottom: 4px; }
+  p { margin: 6px 0; }
+  table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 11px; }
+  th, td { border: 1px solid #666; padding: 5px 7px; text-align: left; vertical-align: top; }
+  th { background: #0b3d2e; color: #fff; }
+  .arabic { direction: rtl; text-align: right; font-family: "Arial", "Tahoma", sans-serif; }
+  .prose { text-align: justify; }
+  .group-title { font-weight: bold; margin-top: 14px; }
+</style>
+</head>
+<body>
+
+<h1>Autonomous Sourcing Policy</h1>
+<p><strong>Version:</strong> 1.0 &nbsp;|&nbsp; <strong>Effective Date:</strong> 2026-07-21</p>
+
+<h2>Section 1 — Purpose</h2>
+<p class="prose">
+This document defines the rules used by the Autonomous Sourcing Assistant to identify approved purchase
+requisition lines that qualify for autonomous negotiation creation, and by the Supplier Negotiation Award
+Assistant to select the best supplier response. Only requisition lines whose item category appears in
+Section 2 below, and whose line amount does not exceed the corresponding Maximum Requisition Line Amount,
+are eligible for autonomous sourcing.
+</p>
+
+<h2>Section 2 — Eligible Categories</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>NegotiationTemplate</th>
+      <th>NegotiationOpenDurationDays</th>
+      <th>MinimumNumberOfBids</th>
+      <th>MaximumRequisitionLineAmount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td class="arabic">استشارات تقنية المعلومات</td><td>Two Stage Complex PO</td><td>10</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">استشارات قانونية</td><td>Two Stage Complex PO</td><td>10</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">خدمات التدقيق</td><td>Two Stage Complex PO</td><td>10</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">استشارات الاستراتجية</td><td>Two Stage Complex PO</td><td>10</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">أجهزة الكمبيوتر المحمولة</td><td>Two Stage Purchase Order</td><td>7</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">خوادم</td><td>Two Stage Purchase Order</td><td>7</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">طابعات</td><td>Standard Purchase Order</td><td>7</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">لوحات المفاتيح</td><td>Standard Purchase Order</td><td>7</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">فأرة</td><td>Standard Purchase Order</td><td>7</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">شاشات</td><td>Standard Purchase Order</td><td>7</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">أثاث</td><td>Standard Purchase Order</td><td>7</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">محطات العمل</td><td>Standard Purchase Order</td><td>7</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">مواد التنظيف</td><td>Standard Purchase Order</td><td>7</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">اصلاح وصيانة تقنية المعلومات</td><td>Standard Complex PO</td><td>7</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">مبنى مكاتب الاصلاح والصيانة</td><td>Standard Complex PO</td><td>7</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">اصلاح وصيانة التكييف المركزي</td><td>Standard Complex PO</td><td>7</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">مواد استهلاكية</td><td>Standard Purchase Order</td><td>7</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">ضيافة و مطبخ</td><td>Standard Purchase Order</td><td>7</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">حبر</td><td>Standard Purchase Order</td><td>7</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">قرص صلب</td><td>Two Stage Purchase Order</td><td>7</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">ذاكرة فلاش</td><td>Standard Purchase Order</td><td>7</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">كابلات</td><td>Standard Purchase Order</td><td>7</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">سماعات رأس</td><td>Standard Purchase Order</td><td>7</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">مكبرات صوت</td><td>Standard Purchase Order</td><td>7</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">كاميرا</td><td>Standard Purchase Order</td><td>7</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">محطة ارساء</td><td>Standard Purchase Order</td><td>7</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">ترخيص</td><td>Two Stage Complex PO</td><td>10</td><td>3</td><td>100000000</td></tr>
+    <tr><td class="arabic">اللوازم المكتبية</td><td>Standard Purchase Order</td><td>7</td><td>3</td><td>100000000</td></tr>
+  </tbody>
+</table>
+
+<h2>Section 3 — Award Basis</h2>
+<p class="prose">The default award basis for all eligible categories is lowest price per line. Sole-source award is applied when a single supplier submits the lowest price across all lines of a negotiation; otherwise, award is applied at the line level.</p>
+
+<h2>Section 4 — Post-Award Action</h2>
+<p class="prose">Once an award is approved, Oracle Fusion automatically generates the purchasing document (Standard Purchase Order, Two Stage Purchase Order, Standard Complex PO, or Two Stage Complex PO) corresponding to the NegotiationTemplate assigned to the awarded category.</p>
+
+<h2>Section 5 — Eligibility Conditions</h2>
+<p class="prose">A requisition line is eligible for autonomous sourcing only if: the requisition is Approved; the line is marked as requiring negotiation and is not already covered by an existing negotiation; the line's assigned buyer matches the configured autonomous sourcing negotiation owner; the line's item category matches an entry in Section 2; the line amount does not exceed the MaximumRequisitionLineAmount for its category; and the requested delivery date is on or after the negotiation close date plus the category's NegotiationOpenDurationDays.</p>
+
+<h2>Section 6 — Supplier Invitation</h2>
+<p class="prose">Suppliers are invited automatically based on historical purchasing data for the matched category, using negotiation templates configured with the "Send invitation to all contacts" option enabled.</p>
+
+<h2>Section 7 — Policy Summary</h2>
+
+<p class="group-title">Group 1 — Negotiation template: Standard Purchase Order (Duration: 7 days, Minimum bids: 3, Maximum line amount: 100,000,000)</p>
+<p class="prose">Eligible Categories: طابعات, لوحات المفاتيح, فأرة, شاشات, أثاث, محطات العمل, مواد التنظيف, مواد استهلاكية, ضيافة و مطبخ, حبر, ذاكرة فلاش, كابلات, سماعات رأس, مكبرات صوت, كاميرا, محطة ارساء, اللوازم المكتبية (Printers, Keyboards, Mouse, Monitors, Furniture, Workstations, Cleaning Supplies, Consumables, Staff Hospitality &amp; Canteen, Toner &amp; Ink, USB, Cables, Headphones, Speakers, Camera, Dock Station, Stationery).</p>
+
+<p class="group-title">Group 2 — Negotiation template: Two Stage Purchase Order (Duration: 7 days, Minimum bids: 3, Maximum line amount: 100,000,000)</p>
+<p class="prose">Eligible Categories: أجهزة الكمبيوتر المحمولة, خوادم, قرص صلب (Laptops, Servers, Hard Disk).</p>
+
+<p class="group-title">Group 3 — Negotiation template: Two Stage Complex PO (Duration: 10 days, Minimum bids: 3, Maximum line amount: 100,000,000)</p>
+<p class="prose">Eligible Categories: استشارات تقنية المعلومات, استشارات قانونية, خدمات التدقيق, استشارات الاستراتجية, ترخيص (IT Consultation, Legal Consultation, Audit Services, Strategy Consultation, License).</p>
+
+<p class="group-title">Group 4 — Negotiation template: Standard Complex PO (Duration: 7 days, Minimum bids: 3, Maximum line amount: 100,000,000)</p>
+<p class="prose">Eligible Categories: اصلاح وصيانة تقنية المعلومات, مبنى مكاتب الاصلاح والصيانة, اصلاح وصيانة التكييف المركزي (Repair &amp; Maintenance IT, Repair &amp; Maintenance Office Building, Repair &amp; Maintenance Central AC).</p>
+
+<p class="prose">Negotiation type for all groups: RFQ / Sourcing negotiation as configured on the corresponding template. Award basis: Lowest price per line. Post-award action: Generate the purchasing document automatically based on the assigned negotiation template.</p>
+
+</body>
+</html>
